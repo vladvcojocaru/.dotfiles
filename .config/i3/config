@@ -1,18 +1,18 @@
 set $mod Mod1
-
 font pango:monospace 8
-
 exec --no-startup-id dex --autostart --environment i3
-
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
 exec --no-startup-id nm-applet
-
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
+
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% && $refresh_i3status
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -5% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+
+
+
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -127,16 +127,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 1 px or 1 ppt
+        bindsym k resize grow height 1 px or 1 ppt
+        bindsym l resize shrink height 1 px or 1 ppt
+        bindsym semicolon resize grow width 1 px or 1 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 1 px or 1 ppt
+        bindsym Down resize grow height 1 px or 1 ppt
+        bindsym Up resize shrink height 1 px or 1 ppt
+        bindsym Right resize grow width 1 px or 1 ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -153,20 +153,19 @@ bar {
 }
 
 # CUSTOM CONFIGS #
-#default_border pixel 2
-#default_floating_border pixel 2
+# default_border pixel 1
+# default_floating_border pixel 1
 default_border none
 default_floating_border none
-client.focused #556064 #556064 #556064 #556064
-client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-client.unfocused #2F3D44 #2F3D44 #1ABC9C #454948
-client.urgent #CB4B16 #FDF6E3 #1ABC9C #268BD2
-client.placeholder #000000 #0c0c0c #ffffff #000000
-client.background #2B2C2B
+# client.focused #556064 #556064 #556064 #556064
+# client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+# client.unfocused #2F3D44 #2F3D44 #1ABC9C #454948
+# client.urgent #CB4B16 #FDF6E3 #1ABC9C #268BD2
+# client.placeholder #000000 #0c0c0c #ffffff #000000
+# client.background #2B2C2B
 
 
 exec --no-startup-id xrandr --output HDMI-A-0 --left-of eDP --mode 1920x1080 --rate 179.82
 exec_always --no-startup-id setxkbmap -option caps:escape
 
 bindsym $mod+Shift+s exec flameshot gui
-
