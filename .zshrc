@@ -1,0 +1,29 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time Oh My Zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="robbyrussell"
+
+plugins=(git)
+# CUSTOM
+alias kat="kitty +icat"
+alias v="nvim"
+
+# Start SSH agent if not running
+if ! pgrep -u "$USER" ssh-agent > /dev/null; then
+    eval "$(ssh-agent -s)"
+fi
+
+# Add SSH key
+ssh-add ~/.ssh/id_ed25519
+
+
+source $ZSH/oh-my-zsh.sh
+
+export PATH=$HOME/.local/bin:$PATH
