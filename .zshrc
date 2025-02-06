@@ -15,15 +15,6 @@ plugins=(git)
 alias kat="kitty +icat"
 alias v="nvim"
 
-# Start SSH agent if not running
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    eval "$(ssh-agent -s)"
-fi
-
-# Add SSH key
-ssh-add ~/.ssh/id_ed25519
-
-
 source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/.local/bin:$PATH
