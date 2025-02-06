@@ -1,0 +1,49 @@
+{
+    "auto_update_extensions": {
+        "neocmake": false
+    },
+    "tab_size": 4,
+    "features": {
+        "inline_completion_provider": "none"
+    },
+    "tab_bar": {
+        "show": false
+    },
+    "tabs": {
+        "file_icons": true
+    },
+
+    "format_on_save": "off",
+    "git": {
+        "git_gutter": null,
+        "gutter_debounce": null,
+        "inline_blame": {
+            "enabled": false
+        }
+    },
+
+    "vertical_scroll_margin": 8,
+    "scroll_beyond_last_line": "vertical_scroll_margin",
+    "vim": {
+        "highlight_on_yank_duration": 100,
+        "use_system_clipboard": "never"
+    },
+    "buffer_font_family": "JetBrainsMonoNL Nerd Font",
+
+    "vim_mode": true,
+    "ui_font_size": 14,
+    "buffer_font_size": 14,
+    "relative_line_numbers": true,
+    "current_line_highlight": "none",
+    "theme": {
+        "mode": "system",
+        "light": "Rosé Pine Moon",
+        "dark": "Rosé Pine Moon"
+    },
+
+    "languages": {
+        "Python": {
+            "language_servers": ["!pylsp", "pyright"]
+        }
+    }
+}
