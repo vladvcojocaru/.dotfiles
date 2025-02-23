@@ -153,19 +153,29 @@ bar {
 }
 
 # CUSTOM CONFIGS #
-# default_border pixel 1
-# default_floating_border pixel 1
-default_border none
-default_floating_border none
-# client.focused #556064 #556064 #556064 #556064
-# client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-# client.unfocused #2F3D44 #2F3D44 #1ABC9C #454948
-# client.urgent #CB4B16 #FDF6E3 #1ABC9C #268BD2
-# client.placeholder #000000 #0c0c0c #ffffff #000000
-# client.background #2B2C2B
+# default_border none
+# default_floating_border none
+default_border pixel 1
+default_floating_border pixel 1
 
+# White and grey colors
+# client.focused          #FFFFFF #FFFFFF #FFFFFF #FFFFFF
+# client.focused_inactive #808080 #808080 #808080 #808080
+# client.unfocused        #808080 #808080 #808080 #808080
+# client.urgent           #FF0000 #FF0000 #FF0000 #FF0000
+# client.placeholder      #000000 #000000 #000000 #000000
+
+# Catppuccin Mocha Colors
+# client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7  
+# client.focused_inactive #a6adc8 #a6adc8 #a6adc8 #a6adc8 
+# client.unfocused        #585b70 #585b70 #585b70 #585b70
+# client.urgent           #f38ba8 #f38ba8 #f38ba8 #f38ba8  
+# client.placeholder      #313244 #313244 #313244 #313244 
+
+#  gaps inner 10
 
 exec --no-startup-id xrandr --output HDMI-A-0 --left-of eDP --mode 1920x1080 --rate 179.82
 exec_always --no-startup-id setxkbmap -option caps:escape
+#exec --no-startup-id feh --bg-scale Pictures/wallpapers/dfwb8ehp9l4e1.png
 
 bindsym $mod+Shift+s exec flameshot gui
