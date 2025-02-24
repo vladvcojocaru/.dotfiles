@@ -158,12 +158,6 @@ bar {
 default_border pixel 1
 default_floating_border pixel 1
 
-# White and grey colors
-client.focused          #FFFFFF #FFFFFF #FFFFFF #FFFFFF
-client.focused_inactive #808080 #808080 #808080 #808080
-client.unfocused        #808080 #808080 #808080 #808080
-client.urgent           #FF0000 #FF0000 #FF0000 #FF0000
-client.placeholder      #000000 #000000 #000000 #000000
 
 # Catppuccin Mocha Colors
 # client.focused          #cba6f7 #cba6f7 #cba6f7 #cba6f7  
@@ -171,12 +165,18 @@ client.placeholder      #000000 #000000 #000000 #000000
 # client.unfocused        #585b70 #585b70 #585b70 #585b70
 # client.urgent           #f38ba8 #f38ba8 #f38ba8 #f38ba8  
 # client.placeholder      #313244 #313244 #313244 #313244 
-
-gaps inner 10
+# White and grey colors
+# client.focused          #FFFFFF #FFFFFF #FFFFFF #FFFFFF
+# client.focused_inactive #808080 #808080 #808080 #808080
+# client.unfocused        #808080 #808080 #808080 #808080
+# client.urgent           #FF0000 #FF0000 #FF0000 #FF0000
+# client.placeholder      #000000 #000000 #000000 #000000
+# gaps inner 10
 
 exec --no-startup-id xrandr --output HDMI-A-0 --left-of eDP --mode 1920x1080 --rate 179.82
 exec_always --no-startup-id setxkbmap -option caps:escape
-#exec --no-startup-id feh --bg-scale Pictures/wallpapers/dfwb8ehp9l4e1.png
-exec --no-startup-id picom
+exec --no-startup-id feh --bg-scale Pictures/wallpapers/onlyfans.png
+# exec --no-startup-id picom
+# exec --no-startup-id polybar
 
 bindsym $mod+Shift+s exec flameshot gui

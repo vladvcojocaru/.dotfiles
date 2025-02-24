@@ -9,8 +9,8 @@ export PATH="$PATH:/opt/kafka_2.13-3.9.0/bin"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-ZSH_THEME="bira"
+ZSH_THEME="robbyrussell"
+#ZSH_THEME="bira"
 
 plugins=(git)
 # CUSTOM
@@ -20,3 +20,5 @@ alias v="nvim"
 source $ZSH/oh-my-zsh.sh
 
 export PATH=$HOME/.local/bin:$PATH
+bindkey -s ^f "tmux-sessionizer\n"
+
