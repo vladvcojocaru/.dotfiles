@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/Code -mindepth 1 -maxdepth 1 -type d | fzf)
+    selected=$(find ~/Code ~/.dotfiles -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
 if [[ -z $selected ]]; then
@@ -18,8 +18,15 @@ if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
     exit 0
 fi
 
-if ! tmux has-session -t=$selected_name 2> /dev/null; then
+if ! tmux has-session -t=$selected_name 2>/dev/null; then
     tmux new-session -ds $selected_name -c $selected
 fi
 
-tmux switch-client -t $selected_name
+if [[ -z $TMUX ]]; then
+    # If not inside a tmux session, attach instead of switching
+    tmux attach-session -t $selected_name
+else
+    # If already in tmux, switch the client
+    tmux switch-client -t $selected_name
+fi
+

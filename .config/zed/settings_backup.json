@@ -4,7 +4,7 @@
     },
     "tab_size": 4,
     "features": {
-        "edit_prediction_provider": "none"
+        "inline_completion_provider": "none"
     },
     "tab_bar": {
         "show": false

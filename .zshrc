@@ -11,10 +11,13 @@ export PATH="$PATH:/opt/kafka_2.13-3.9.0/bin"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 #ZSH_THEME="bira"
+#ZSH_THEME="lpha3ch0"
+#ZSH_THEME="customtheme"
 
 plugins=(git)
 # CUSTOM
 alias kat="kitty +icat"
+alias cheat="cat ~/.dotfiles/.config/nvim/lua/config/remap.lua"
 alias v="nvim"
 
 source $ZSH/oh-my-zsh.sh
