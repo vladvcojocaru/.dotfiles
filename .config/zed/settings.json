@@ -30,7 +30,7 @@
         "highlight_on_yank_duration": 80,
         "use_system_clipboard": "never"
     },
-    "buffer_font_family": "Hack Nerd Font",
+    "buffer_font_family": "JetBrains Mono NL",
 
     "vim_mode": true,
     "ui_font_size": 14,
@@ -39,8 +39,8 @@
     "current_line_highlight": "none",
     "theme": {
         "mode": "system",
-        "light": "One Dark Pro",
-        "dark": "Rosé Pine Moon"
+        "light": "Catppuccin Mocha",
+        "dark": "One Dark Pro"
     },
 
     "languages": {

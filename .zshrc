@@ -10,18 +10,19 @@ export PATH="$PATH:/opt/kafka_2.13-3.9.0/bin"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+#ZSH_THEME="agnoster"
 #ZSH_THEME="bira"
 #ZSH_THEME="lpha3ch0"
 #ZSH_THEME="customtheme"
 
 plugins=(git)
 # CUSTOM
-alias kat="kitty +icat"
 alias cheat="cat ~/.dotfiles/.config/nvim/lua/config/remap.lua"
 alias v="nvim"
 
+
+export PATH=$PATH:/opt/kafka_2.13-3.9.0/bin
+
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$HOME/.local/bin:$PATH
-bindkey -s ^f "tmux-sessionizer\n"
 
