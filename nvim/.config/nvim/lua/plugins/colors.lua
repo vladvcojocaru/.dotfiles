@@ -53,25 +53,25 @@ return {
 
 
     },
-    -- {
-    --     "rose-pine/neovim",
-    --     name = "rose-pine",
-    --     config = function()
-    --         require('rose-pine').setup({
-    --             disable_background = true,
-    --         })
-    --       vim.cmd("colorscheme rose-pine")
-    --
-    --         ColorMyPencils()
-    --     end
-    -- },
     {
-        "catppuccin/nvim",
-        name = "catppuccin",
-        priority = 1000,
-        config = function ()
-            vim.cmd("colorscheme catppuccin-mocha")
-            ColorMyPencils("catppuccin-mocha")
+        "rose-pine/neovim",
+        name = "rose-pine",
+        config = function()
+            -- require('rose-pine').setup({
+            --     disable_background = true,
+            -- })
+          vim.cmd("colorscheme rose-pine")
+
+            ColorMyPencils()
         end
-    }
+    },
+    -- {
+    --     "catppuccin/nvim",
+    --     name = "catppuccin",
+    --     priority = 1000,
+    --     config = function ()
+    --         vim.cmd("colorscheme catppuccin-mocha")
+    --         ColorMyPencils("catppuccin-mocha")
+    --     end
+    -- }
 }

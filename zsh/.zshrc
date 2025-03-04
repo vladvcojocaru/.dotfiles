@@ -4,4 +4,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 alias v="nvim"
+alias c="clear"
+alias t="tree"
 
