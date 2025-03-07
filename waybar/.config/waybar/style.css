@@ -1,7 +1,7 @@
 /* ~/.config/waybar/style.css */
 * {
     border: none;
-    font-family: "Fira Code", "Font Awesome 6 Free";
+    font-family: "JetBrainsMonoNL Nerd Font", "Font Awesome 6 Free";
     font-size: 12px;
     min-height: 0;
 }
@@ -21,14 +21,18 @@ window#waybar {
 #workspaces button.active {
     color: #ffffff;
     background-color: #484848;
-    border-radius: 4px;
+    border-radius: 0px;
 }
 
 #cpu, #memory, #network, #battery, #clock, #tray {
     padding: 0 8px;
     margin: 0 2px;
     background-color: #383838;
-    border-radius: 4px;
+    border-radius: 0px;
+}
+
+#workspaces button:hover {
+    transition: none;
 }
 
 /* Rest of your existing styles... */

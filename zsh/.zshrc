@@ -7,3 +7,4 @@ alias v="nvim"
 alias c="clear"
 alias t="tree"
 
+export PATH="$PATH:/home/vlad/.local/bin"

@@ -2,12 +2,12 @@
 {
     "layer": "top",
     "position": "bottom",
-    "height": 24,
+    "height": 20,
     "spacing": 4,
     //"modules-left": ["hyprland/workspaces", "cpu", "memory", "network"],
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["battery", "tray"],
+    "modules-right": ["network", "battery", "tray"],
     
     // Workspaces configuration
     "wlr/workspaces": {
@@ -32,7 +32,7 @@
         "tooltip-format": "{:%A, %d %B %Y}"
     },
     "network": {
-        "format-wifi": " {bandwidthUpBits}↑ {bandwidthDownBits}↓",
+        "format-wifi": "  {bandwidthUpBits}↑ {bandwidthDownBits}↓",
         "format-ethernet": " {bandwidthUpBits}↑ {bandwidthDownBits}↓",
         "format-disconnected": " Offline",
         "interval": 5
