@@ -1,0 +1,68 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 24,
+  "spacing": 4,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "cpu", "memory", "battery", "tray"],
+  
+  // Module configurations
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{id}",
+    "format-icons": {
+      "active": "",
+      "default": "",
+      "urgent": ""
+    }
+  },
+  "clock": {
+    "format": "󰥔 {:%H:%M}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "months": "<span color='#cdd6f4'>{}</span>",
+        "days": "<span color='#bac2de'>{}</span>",
+        "weekdays": "<span color='#f38ba8'>{}</span>",
+        "today": "<span color='#f9e2af'><b>{}</b></span>"
+      }
+    }
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 Muted",
+    "format-icons": {
+      "default": ["󰕿", "󰖀", "󰕾"]
+    }
+  },
+  "network": {
+    "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰖪 Disconnected",
+    "tooltip-format": "{ifname}: {ipaddr}/{cidr}"
+  },
+  "cpu": {
+    "format": "󰍛 {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "󰘚 {}%",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": ["󰂎", "󰁺", "󰁼", "󰁾", "󰂀"]
+  },
+  "tray": {
+    "spacing": 10
+  }
+}

@@ -1,0 +1,14 @@
+[2025-05-04 10:55:08.196] [info] Using configuration file /home/kevlar/.config/waybar/config.jsonc
+[2025-05-04 10:55:08.199] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2025-05-04 10:55:08.199] [info] Using CSS file /home/kevlar/.config/waybar/style.css
+[2025-05-04 10:55:08.203] [info] Hyprland IPC starting
+[2025-05-04 10:55:08.203] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-04 10:55:08.326] [info] Bar configured (width: 1920, height: 24) for output: HDMI-A-1
+[2025-05-04 10:56:05.123] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-04 10:56:05.125] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-04 10:56:06.383] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-04 10:56:06.385] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-04 11:16:35.828] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-04 11:16:35.836] [info] Loading persistent workspaces from Hyprland workspace rules
+[2025-05-04 11:16:43.043] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2025-05-04 11:16:43.044] [info] Loading persistent workspaces from Hyprland workspace rules

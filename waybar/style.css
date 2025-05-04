@@ -1,0 +1,141 @@
+/* Tokyo Night Dark Palette */
+@define-color base   #1a1b26;
+@define-color mantle #16161e;
+@define-color crust  #13131a;
+@define-color text   #c0caf5;
+@define-color subtext0 #a9b1d6;
+@define-color subtext1 #9aa5ce;
+@define-color surface0 #292e42;
+@define-color surface1 #3b4261;
+@define-color surface2 #414868;
+@define-color red     #f7768e;
+@define-color peach   #ff9e64;
+@define-color yellow  #e0af68;
+@define-color green   #9ece6a;
+@define-color teal    #1abc9c;
+@define-color blue    #7aa2f7;
+@define-color mauve   #bb9af7;
+@define-color flamingo #f7768e;
+
+/* General styling */
+* {
+    font-family: "FiraCode Nerd Font", monospace;
+    font-size: 14px;
+    font-weight: 500;
+    min-height: 0;
+    border: none;
+    border-radius: 0;
+}
+
+window#waybar {
+    background: @base;
+    color: @text;
+    transition: background-color 0.5s;
+}
+
+#workspaces button {
+    padding: 0 8px;
+    background: transparent;
+    color: @subtext1;
+    border-bottom: 3px solid transparent;
+    min-width: 24px;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    color: @blue;
+    border-bottom: 3px solid @blue;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+#workspaces button:hover {
+    background: @surface1;
+    color: @text;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#battery {
+    padding: 0 12px;
+    margin: 0 4px;
+    background: @surface0;
+    border-radius: 0px;
+}
+
+#tray {
+    padding: 0 12px;
+    margin: 0 0 0 4px;
+    background: @surface0;
+    border-radius: 0px;
+}
+
+#clock {
+    color: @yellow;
+    font-weight: 600;
+}
+
+#pulseaudio {
+    color: @green;
+}
+
+#pulseaudio.muted {
+    color: @red;
+}
+
+#network {
+    color: @teal;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#cpu {
+    color: @blue;
+}
+
+#memory {
+    color: @mauve;
+}
+
+#battery {
+    color: @green;
+}
+
+#battery.warning {
+    color: @peach;
+}
+
+#battery.critical {
+    color: @red;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: @flamingo;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .active {
+    -gtk-icon-effect: highlight;
+}
+
+tooltip {
+    background: @crust;
+    border: 1px solid @surface2;
+    color: @text;
+}
+
+tooltip label {
+    color: @text;
+}
+
