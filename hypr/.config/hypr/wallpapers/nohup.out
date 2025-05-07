@@ -1,0 +1,12 @@
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (1), removing 8.3MB
+[LOG] Preloaded target /home/kevlar/.config/hypr/wallpapers/dark-hole.png in 19.02ms -> Pixel size: [2205, 1240]
+[LOG] Buffer created for target /home/kevlar/.config/hypr/wallpapers/dark-hole.png, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 8.3MB
+[LOG] configure for HDMI-A-1
+[LOG] configure for HDMI-A-1
+[LOG] hyprpaper socket started at /run/user/1000/hypr/29e2e59fdbab8ed2cc23a20e3c6043d5decb5cdc_1746612841_87641975/.hyprpaper.sock (fd: 4)
+[LOG] Image data for HDMI-A-1: /home/kevlar/.config/hypr/wallpapers/dark-hole.png at [-0.28, 0.00], scale: 0.87 (original image size: [2205, 1240])
+[LOG] Submitting viewport dest size 1920x1080 for 62d9fcf2f1e0
+[LOG] handlePreferredScale: 1.00 for 62d9fcf2f1e0
