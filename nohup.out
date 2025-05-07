@@ -1,6 +1,0 @@
-[2025-05-07 14:10:38.580] [info] Using configuration file /home/kevlar/.config/waybar/config.jsonc
-[2025-05-07 14:10:38.582] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
-[2025-05-07 14:10:38.582] [info] Using CSS file /home/kevlar/.config/waybar/style.css
-[2025-05-07 14:10:38.587] [info] Hyprland IPC starting
-[2025-05-07 14:10:38.587] [info] Loading persistent workspaces from Hyprland workspace rules
-[2025-05-07 14:10:38.713] [info] Bar configured (width: 1920, height: 24) for output: HDMI-A-1

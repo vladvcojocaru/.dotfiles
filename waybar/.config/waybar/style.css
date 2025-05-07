@@ -80,6 +80,7 @@ window#waybar {
     margin: 0 4px;
     background: @surface0;
     border-radius: 16px;
+    color: @text
 }
 
 #tray {
@@ -89,51 +90,51 @@ window#waybar {
     border-radius: 0px;
 }
 
-#clock {
-    color: @yellow;
-    font-weight: 600;
-}
-
-#pulseaudio {
-    color: @green;
-}
-
-#pulseaudio.muted {
-    color: @red;
-}
-
-#network {
-    color: @teal;
-}
-
-#network.disconnected {
-    color: @red;
-}
-
-#cpu {
-    color: @blue;
-}
-
-#memory {
-    color: @mauve;
-}
-
-#battery {
-    color: @green;
-}
-
-#battery.warning {
-    color: @peach;
-}
-
-#battery.critical {
-    color: @red;
-}
-
-#battery.charging,
-#battery.plugged {
-    color: @flamingo;
-}
+/* #clock { */
+/*     color: @yellow; */
+/*     font-weight: 600; */
+/* } */
+/**/
+/* #pulseaudio { */
+/*     color: @green; */
+/* } */
+/**/
+/* #pulseaudio.muted { */
+/*     color: @red; */
+/* } */
+/**/
+/* #network { */
+/*     color: @teal; */
+/* } */
+/**/
+/* #network.disconnected { */
+/*     color: @red; */
+/* } */
+/**/
+/* #cpu { */
+/*     color: @blue; */
+/* } */
+/**/
+/* #memory { */
+/*     color: @mauve; */
+/* } */
+/**/
+/* #battery { */
+/*     color: @green; */
+/* } */
+/**/
+/* #battery.warning { */
+/*     color: @peach; */
+/* } */
+/**/
+/* #battery.critical { */
+/*     color: @red; */
+/* } */
+/**/
+/* #battery.charging, */
+/* #battery.plugged { */
+/*     color: @flamingo; */
+/* } */
 
 #tray > .passive {
     -gtk-icon-effect: dim;
