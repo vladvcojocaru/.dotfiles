@@ -41,7 +41,7 @@ return {
         priority = 1000,
         config = function ()
             vim.cmd("colorscheme tokyonight")
-            ColorMyPencils("tokyonight")
+            -- ColorMyPencils("tokyonight")
         end
     }
 }
