@@ -36,9 +36,9 @@ window#waybar {
 
 
 #workspaces {
-    margin: 0 4px;
-    padding: 0px 6px;
-    border-radius: 8px;
+    /* margin: 0 4px; */
+    /* padding: 0px 6px; */
+    /* border-radius: 8px; */
     color: @text;
 }
 
@@ -47,7 +47,7 @@ window#waybar {
     padding: 0px 6px;
     background: @surface1;
     color: @text;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     /* transition: background 0.3s ease, color 0.3s ease; */
 }
 
@@ -74,20 +74,15 @@ window#waybar {
 #network,
 #cpu,
 #memory,
-#battery {
-    margin: 0 4px;
-    padding: 0px 6px;
-    background: @surface0;
-    border-radius: 8px;
-    color: @text
-}
-
+#battery,
 #tray {
     margin: 0 4px;
     padding: 0px 6px;
     background: @surface0;
-    border-radius: 8px;
+    /* border-radius: 8px; */
+    color: @text
 }
+
 
 
 #tray > .passive {
