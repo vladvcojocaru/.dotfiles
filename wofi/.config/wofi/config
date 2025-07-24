@@ -5,8 +5,8 @@ insensitive=true
 prompt=Search...
 width=400
 height=300
-lines=10
-columns=1
+# lines=10
+# columns=1
 location=center
 
 # Behavior
